@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="ind.css">
+    <link rel="manifest" href="favicon/manifest.json">
+  </head>
+  <body>
+  <form class="">
+
+<div class="mainDiv">
+  <h4>Personal Details</h4>
+<div class="persdiv">
+  name:  <input type="text" name="name" value="" id="name"><br>
+  rollno:<input type="text" name="rollno" value="" id="rollno"><br>
+  email:<input type="text" name="email" value="" id="email"><br>
+  phoneno:<input type="text" name="phoneno" value=""id="phoneno"><br>
+</div>
+career objective:  <select class="co" name="" id="career">
+
+  <option value="to improve my knowledge" >to improve my knowledge</option>
+    <option value="to learn new things" >to learn new things</option>
+  </select><br>
+  <b>education details</b>
+  <div class="edudiv">
+
+    <div class="ug">
+      <select class="btech" id="betech">
+        <option value="btech" >btech</option>
+        <option value="degree" >degree</option>
+      </select><br>
+      college:<input type="text"name="name"value="" id="college"><br>
+  <input type="radio"name="marks2" value="cgpa" id="bmks">cgpa
+  <input type="radio"name="marks2" value="percentage" id="bmks1">percentage<br>
+  marks/cgpa:<input type="text"name="name"value="" placeholder="percentage/cpga" id="marks"><br>
+
+  year of pass:<select class="years" id="yearof">
+    <option value="2015">2015</option>
+      <option value="2016" >2016</option>
+        <option value="2017" >2017</option>
+          <option value="2018" >2018</option>
+            <option value="2019">2019</option>
+
+    </select>
+  </div>
+  <div class="inter">
+    <select class="plustwo" id="intermpc">
+      <option value="inter">inter</option>
+      <option value="diploma">diploma</option>
+    </select><br>
+    college:<input type="text"name="institute"value="" id="intercoll"><br>
+<input type="radio"name="marks" value="cgpa" id="iradio">cgpa
+<input type="radio"name="marks" value="percentage" id="iradio1">percentage<br>
+
+marks/cgpa:<input type="text"name="name"value=""placeholder="percentage/cgpa" id="intermark" > <br>
+year of pass:<select class="years" id="interyear">
+  <option value="2012">2012</option>
+    <option value="2013">2013</option>
+      <option value="2014">2014</option>
+        <option value="2015">2015</option>
+          <option value="2016">2016</option>
+
+  </select>
+</div> -->
+<div class="ssc">
+  <select class="secondry" id="sscselect">
+    <option value="ssc">ssc</option>
+<option value="cbsc">cbsc</option>
+
+  </select><br>
+  college:<input type="text"name="institute"value="" id="ssccoll"><br>
+<input type="radio"name="marks1" value="cgpa" id="sscbks">cgpa
+<input type="radio"name="marks1" value="percentage" id="sscbks1">percentage<br>
+
+marks/cgpa:<input type="text"name="name"value=""placeholder="percentage/cgpa" id="sscmark" > <br>
+year of pass:<select class="years" id=sscyear>
+<option value="2012">2012</option>
+  <option value="2013">2013</option>
+    <option value="2014">2014</option>
+      <option value="2015">2015</option>
+        <option value="2016">2016</option>
+
+</select>
+</div>
+</div>
+
+<button type="button" name="button" onclick="getDetails()">SUBMIT</button>
+</div>
+</form>
+  </body>
+  <script type="text/javascript" src="ind.js">
+
+  </script>
+  <script>
+  if ('serviceWorker' in navigator){
+    navigator.serviceWorker.register("sw.js");
+    console.log("serviceworker registered successfully...");
+    err=>{
+      console.log("error occured in sw");
+    }
+  }
+  </script>
+</html>

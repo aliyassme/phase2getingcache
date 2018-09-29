@@ -1,0 +1,31 @@
+.mainDiv {
+  background: yellow;
+  text-align: center;
+  padding:2%;
+}
+.edudiv {
+  background: blue;
+  display: flex;
+justify-content: space-between;
+}
+.ug {
+  width:30%;
+  background: red;
+  text-align: center;
+  border:solid black;
+}
+.inter {
+  width:30%;
+  background: orange;
+  text-align: center;
+  border: solid black;
+}
+.ssc {
+  width:30%;
+  background: green;
+  text-align: center;
+  border: solid black;
+}
+.persdiv {
+  margin-bottom: 3%;
+}
